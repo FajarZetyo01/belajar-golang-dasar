@@ -16,13 +16,14 @@ type PersonMan struct {
 }
 
 func main() {
-	fajar := PersonMan{"Fajar Setyo Pambudi", "Bekasi", "Jabar"}
-	fmt.Println(fajar)
+	var address1 PersonMan = PersonMan{"Fajar Setyo Pambudi", "Bekasi", "Jabar"}
+	fmt.Println(address1)
 	//andi := fajar
 
-	andi := &fajar
+	var address2 *PersonMan = &address1
 	//Jika menggunakan ini value fajar juga ikut terganti
-	andi.Name = "Andi Bachdim"
-	fmt.Println(andi)
-	fmt.Println(fajar)
+	address2.Name = "Andi Bachdim"
+	fmt.Println(address1)
+	fmt.Println(address2)
+
 }

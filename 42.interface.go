@@ -37,6 +37,7 @@ type Animal struct {
 }
 
 func (animal Animal) GetName() string {
+
 	return animal.Name
 }
 
@@ -44,7 +45,7 @@ func main() {
 
 	fajar := Person{Name: "Fajar"}
 	SayHello(fajar)
-	
+
 	kucing := Animal{Name: "Kucing"}
 	SayHello(kucing)
 
